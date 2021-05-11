@@ -1,6 +1,6 @@
 "use strict";
 
-let number = 88.3;
+/*let number = 88.3;
 
 const person = "Alex";
 
@@ -58,4 +58,4 @@ console.log(2 % 1 == 0);
 
 ! - отрицание;
 && - "и";
-|| - "или";
+|| - "или";*/
