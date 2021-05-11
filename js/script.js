@@ -58,4 +58,38 @@ console.log(2 % 1 == 0);
 
 ! - отрицание;
 && - "и";
-|| - "или";*/
+|| - "или";
+/////////////////////////////////////////////////
+*/
+
+const a = +prompt("Введи число"),
+   b = prompt("Введи операцию"),
+   c = +prompt("Введи число");
+
+let d;
+
+if (b == "*") {
+   d = a * c;
+} else if (b == "+") {
+   d = a + c;
+}
+
+document.write(d);
+
+const num = "50";
+
+switch (num) {
+   case 49: //cстрогое сравнение
+      console.log("no");
+      break;
+   case 100:
+      console.log("no");
+      break;
+   case 50:
+      console.log("yes");
+      break;
+   default:
+      console.log("not working");
+      break;
+}
+//////////////////////////////////////////////////////
