@@ -33,6 +33,7 @@ answers[2] = prompt("ты как?", "");
 document.write(answers);
 
 //интерполяция
+/////////////////////////////////////////////////
 
 const category = "games";
 
@@ -43,6 +44,7 @@ const user = "Jeny"
 alert(`Здравствуй, ${answers[0]}`)
 
 //инкримент и декримент
+////////////////////////////
 
 let incr = 10,
    decr = 10;
@@ -55,13 +57,16 @@ console.log(incr, decr);
 console.log(2 % 1 == 0);
 
 //операторы
+/////////////////////////////
 
 ! - отрицание;
 && - "и";
 || - "или";
+
+//CICLYES
 /////////////////////////////////////////////////
 */
-
+/*
 const a = +prompt("Введи число"),
    b = prompt("Введи операцию"),
    c = +prompt("Введи число");
@@ -76,7 +81,7 @@ if (b == "*") {
 
 document.write(d);
 
-const num = "50";
+const num = 50;
 
 switch (num) {
    case 49: //cстрогое сравнение
@@ -91,5 +96,40 @@ switch (num) {
    default:
       console.log("not working");
       break;
+}*/
+////////////////////////////////
+/*
+let num = 50;
+
+while (num < 55) {
+   console.log(num);
+   num++;
 }
-//////////////////////////////////////////////////////
+
+//тоже самое но другой синтаксис
+
+do {
+   console.log(num);
+   num++;
+}
+while (num < 55);
+
+
+for (let i = 1; i < 8; i++) {
+   console.log(i);
+}*/
+
+//FUNCTIONS
+//////////////////////////////////////
+
+function showFirstMessage(text) {
+   console.log(text);
+   let num = 20; //локальная переменная
+}
+
+showFirstMessage("Hello World!");
+
+function calc(a, b) {
+   return (a * b);
+}
+console.log(calc(6, 6));
