@@ -16,8 +16,7 @@
 
 // Код возьмите из предыдущего домашнего задания
 
-let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
-console.log(numberOfFilms);
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
 
 const personalMovieDB = {
    count: numberOfFilms,
@@ -45,7 +44,7 @@ for (let i = 0; i < 2; i++) {
 
 }*/
 
-
+/*
 let lastMovie = "",
    rating = "",
    i = 0;
@@ -59,6 +58,18 @@ while (i != 2) {
    } else {
       alert("Error!");
       i--;
+   }
+}*/
+
+for (let i = 0; i < 2; i++) {
+   const lastMovie = prompt("Один из последних просмотренных фильмов?", "");
+   rating = prompt("На сколько оцените его?", "");
+
+   if (lastMovie != "" && lastMovie != null && lastMovie < 50 && rating != "" && rating != null) {
+      personalMovieDB.movies[lastMovie] = rating;
+   } else {
+      i--;
+      alert("Произошла ошибка!")
    }
 }
 

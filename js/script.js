@@ -133,3 +133,51 @@ function calc(a, b) {
    return (a * b);
 }
 console.log(calc(6, 6));
+
+function ret() {
+   let num = 60;
+   return (num);
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+//////////////////////////////
+
+const logger = function () {
+   console.log("lool");
+};
+
+logger();
+
+/////////////////////////////
+
+const calcul = (c, d, v) => { return (c + d + v); };
+
+//МЕТОДЫ И СВОЙСТВА СТРОК И ЧИСЕЛ
+//////////////////////////////////////////////////////////////
+
+const str = "text";
+
+console.log(str.toUpperCase());
+
+const fruit = "some sfruit";
+
+console.log(fruit.indexOf("fruit")); // с 5 позиции начинается это слово (называется поиск подстроки)
+
+const logg = "Hello world";
+
+console.log(logg.slice(6, 11));
+
+console.log(logg.substring(11, 6));// тож самое но без отрицательных и первый арг может быть больше второго
+
+console.log(logg.substr(6, 5));// первый арг - начало обрезания, второй - длина обрезания
+
+
+
+const num = 12.2;
+
+console.log(Math.round(num));//12
+
+const test = "12.2px";
+console.log(parseInt())
