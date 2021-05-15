@@ -62,14 +62,14 @@ while (i != 2) {
 }*/
 
 for (let i = 0; i < 2; i++) {
-   const lastMovie = prompt("Один из последних просмотренных фильмов?", "");
-   rating = prompt("На сколько оцените его?", "");
+   const lastMovie = prompt("Один из последних просмотренных фильмов?", ""),
+      rating = prompt("На сколько оцените его?", "");
 
    if (lastMovie != "" && lastMovie != null && lastMovie < 50 && rating != "" && rating != null) {
       personalMovieDB.movies[lastMovie] = rating;
    } else {
       i--;
-      alert("Произошла ошибка!")
+      alert("Произошла ошибка!");
    }
 }
 
