@@ -479,14 +479,45 @@ john1.sayhello();
 
 //ДИНАМИЧЕСККАЯ ТИПИЗАЦИЯ
 ////////////////////////////////////////////////////////////////////////
-// TO string
+// TO string///////////
 //1)
-console.log(typeof (String(null))); //"null"
-console.log(typeof (String(4))); //"4"
+console.log(typeof (String(null))); //string //outdated
+console.log(typeof (String(4))); //string
 //2)
-console.log(typeof (5 + ''));
+console.log(typeof (5 + '')); //string
 
 
 const num2 = 5;
-
 console.log("https://vk.com/catalog/" + num2); // "https://vk.com/catalog/5"
+
+const fontSize = 26 + 'px';
+
+// To Numver///////////
+// 1)
+console.log(typeof (Number('4'))); // number // outdated
+
+// 2)
+console.log(typeof (+'5')); //number
+
+// 3)
+console.log(typeof (parseInt('15px', 10)));// number (15)
+
+// To boolean/////////
+// 1)
+
+0, '', null, undefined, NaN; //это всё false!!!
+
+let switcher = null;
+
+if (switcher) {
+   console.log('working...'); // ничего в консоли
+}
+
+// 2)
+console.log(typeof (Boolean('4'))); // boolean
+
+// 3)
+console.log(typeof (!!'4')); // boolean
+
+//ПОЛУЧЕНИЕ ЭЛЕМЕНТОВ СО СТРАНИЦЫ
+//////////////////////////////////////////////////////////////
