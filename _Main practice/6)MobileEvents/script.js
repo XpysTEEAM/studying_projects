@@ -6,6 +6,8 @@
 //touchcancel
 
 //touches - показывает количество пальцев на экране
+//targetTouches - количество тачей конкретно на элементе
+//changedTouches - количество пальцев, которые совершили нужное действие
 
 window.addEventListener('DOMContentLoaded', () => {
    const box = document.querySelector('.box');
