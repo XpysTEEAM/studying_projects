@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             createMovieList(movieDB.movies, list, deleteMovie);
          });
       });
-   };
+   }
 
    createMovieList(movieDB.movies, list, deleteMovie);
 

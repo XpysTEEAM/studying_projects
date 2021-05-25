@@ -28,9 +28,16 @@ btns[0].addEventListener('click', () => { // по клику на первую �
 //ДЕЛЕГИРОВАНИЕ СОБЫТИЙ
 //////////////////////////////////
 
-wrapper.addEventListener('click', (event) => {
+wrapper.addEventListener('click', (event) => { // делегируем действия с родителя на потомков
    if (event.target && event.target.tagName == 'BUTTON') { //не все эл-ты поддерживают событие клика(<br>), у него нет event.target, поэтому проверяем его существование
       console.log('horosho');
    }
 });
 
+// можно еще event.target.matches("boutton.red") более точная настройка
+
+const btn = document.createElement('button');
+btn.classList.add('red');
+wrapper.append(btn);
+
+//////////////////////////////////
