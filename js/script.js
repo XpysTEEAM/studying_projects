@@ -190,7 +190,7 @@ function second() {
 }
 
 first();
-second();
+second();// 2 1
 
 /////////////////////////
 
@@ -360,8 +360,8 @@ const copy = obj; // Передача поссылке
 
 copy.a = 10;
 
-console.log(obj);
-console.log(copy);
+console.log(obj);//10
+console.log(copy);//10
 
 function copy1(mainObj) { // копирует объект по значению
    let objCopy = {};
@@ -374,7 +374,8 @@ function copy1(mainObj) { // копирует объект по значению
    return objCopy;
 }
 
-сonsole.log(copy1(obj));
+console.log(copy1(obj));
+
 
 const numbers = {
    a: 2,
@@ -521,4 +522,17 @@ console.log(typeof (!!'4')); // boolean
 
 //ПОЛУЧЕНИЕ ЭЛЕМЕНТОВ СО СТРАНИЦЫ
 //////////////////////////////////////////////////////////////
+
+for (var i = 10; i < 35; i += 5) {
+   console.log(i);
+}
+
+var a1 = 5;
+var test = 5 != a1 ? "Yes" : "No";
+console.log(test);
+
+var _vars = "BOOL";
+var isDone = 0;
+var a2 = false;
+var num3 = 12,5;
 

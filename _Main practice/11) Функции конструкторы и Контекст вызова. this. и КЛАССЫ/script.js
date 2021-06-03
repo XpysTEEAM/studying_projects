@@ -1,6 +1,6 @@
 //ФУНКЦИИ КОНСТРУКТОРЫ
 ///////////////////////////////////////////////////////////////
-/*
+
 function User(name, id) {
    this.name = name;
    this.id = id;
@@ -17,9 +17,9 @@ User.prototype.exit = function () { // у всех созданных после
 const ivan = new User('Ivan', 28);
 const alex = new User('Alex', 20);
 
-alex.exit();
+alex.exit(); // Пользователь Alex ушёл
 
-ivan.hello();
+ivan.hello(); // Hello Ivan
 
 console.log(ivan);
 
@@ -51,7 +51,7 @@ showThis1(4, 5);
 const obj2 = {
    a: 20,
    b: 15,
-   sun: function () {
+   sum: function () {
       console.log(this)
       // HO
       function shout() {
@@ -60,7 +60,7 @@ const obj2 = {
       shout(); // undefined (вызываем не метод объеста, а функцию внутри метода, поэтому контекст вызова теряется)
    }
 };
-obj.sum(); //Если контекст вызова внутри метода объеста, то он ссылается на объект
+obj2.sum(); //Если контекст вызова внутри метода объеста, то он ссылается на объект
 
 //3)////////////////////
 
@@ -69,7 +69,7 @@ function User(name, id) {
    this.id = id;
    this.human = true;
 
-}// this в конструкторах и слассах - это новый экземпляр объекта
+}// this в конструкторах и классах - это новый экземпляр объекта
 
 const ivan1 = new User('Ivan', 28);
 
@@ -84,7 +84,7 @@ const user = {
    name: 'john'
 };
 
-sayName.call(user, 'Smith');// в русную передаём контекст //4.1
+sayName.call(user, 'Smith');// в ручную передаём контекст //4.1
 sayName.apply(user, ['Smith']);// отличия у этих 2х только в синтаксисе //4.2
 
 function count(num) {
@@ -94,7 +94,7 @@ function count(num) {
 const double = count.bind(2); // создаёт новую функцию с контекстом в скобках //4.3
 console.log(double(2)); //4
 console.log(double(13)); //26
-*/
+
 
 const btn = document.querySelector('button');
 
@@ -119,7 +119,7 @@ const obj = {
 
 obj.sayNumber(); // obj{} //у стрелочной функции нет своего контекста, она берёт контекст у метода, а метод берёт контекст у объекта
 
-const double = a => a * 2; // если функция в одну строчку, то ее можно сократить вот так(return сам подставляется)
+const double1 = a => a * 2; // если функция в одну строчку, то ее можно сократить вот так(return сам подставляется)
 
 ///////////////////////////////////////////////////////////
 //КЛАССЫ
@@ -154,4 +154,4 @@ console.log(superSquare.calcArea());
 
 const square = new Rectangle(10, 10);
 
-console.log(square.calcArea());
+console.log(square.calcArea()); //100
